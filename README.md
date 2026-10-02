@@ -1,17 +1,22 @@
-# catalogo_videojuego
+# Proyecto: Tarjeta de Videojuego en Flutter
 
-A new Flutter project.
+Este proyecto es una práctica de Desarrollo de Interfaces implementada en Flutter (Dart).
+Consiste en la creación de una "Tarjeta de Videojuego" para un catálogo digital, basada en un diseño previo de Figma (Hollow Knight).
 
-## Getting Started
+## Características del Proyecto (Fases 1, 2 y 3)
 
-This project is a starting point for a Flutter application.
+1. **Diseño Visual**: Réplica exacta de los márgenes, fuentes, paleta de colores y bordes redondeados del diseño de Figma usando `Container`, `Stack`, `Positioned`, `Column` y `Row`.
+2. **Imágenes Locales**: La imagen principal se carga desde la carpeta local `assets/` y está configurada en `pubspec.yaml`.
+3. **Código Explicado**: Todo el archivo `lib/main.dart` ha sido **comentado línea por línea** pensando en desarrolladores que recién están empezando con Flutter. Explica para qué sirve cada Widget (como `Scaffold`, `StatelessWidget`, `StatefulWidget`, etc.).
+4. **Interactividad (Fase 3)**:
+    - **Botón `onPressed`**: Al pulsar "Ver detalles" (`ElevatedButton`), se llama a una función con parámetros `_calculateDiscount(20.0)` que calcula un descuento y lo muestra por consola (`print`).
+    - **Callback directo e IconButton**: El icono de corazón (`IconButton`) llama directamente a la función `_toggleFavorite`, que cambia el estado interno para pintar el corazón de rojo.
+    - **GestureDetector**: Al hacer click encima de la imagen superior del juego, se detecta el toque y muestra un mensaje por consola.
 
-A few resources to get you started if this is your first Flutter project:
+## Cómo ejecutar
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Simplemente ejecuta el siguiente comando en la raíz del proyecto para lanzar la app en el emulador:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter run
+```
